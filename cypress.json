@@ -1,0 +1,36 @@
+{
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout":80000,
+  "chromeWebSecurity": false,
+  "env": {
+    "selected":"prod",
+    "prod": {
+      "baseUrl":"https://www.kayak.ch/"
+    },
+    "stg":{
+      "baseUrl":""
+    },
+    "dev":{
+      "baseUrl":""
+    }
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/report/mochawesome-report",
+    "charts": false,
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
+  },
+  "video":false,
+  "videosFolder": "cypress/report/mochawesome-report/assets/videos",
+  "screenshotsFolder": "cypress/report/mochawesome-report/assets/images",
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "retries": {
+    "runMode": 1,
+    "openMode": 0
+  },
+  "numTestsKeptInMemory": 0
+}
